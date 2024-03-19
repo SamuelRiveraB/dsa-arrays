@@ -26,6 +26,10 @@ class MyArray {
     this.length = 0;
     this.data = {};
   }
+
+  get(index) {
+    return this.data[index];
+  }
 }
 
 // Reverse a string means you have to convert it to an array
