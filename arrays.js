@@ -21,4 +21,11 @@ console.log(strings);
 // int a[20]
 // int b[5] {1,2,3,4,5}
 
+class MyArray {
+  constructor() {
+    this.length = 0;
+    this.data = {};
+  }
+}
+
 // Reverse a string means you have to convert it to an array
