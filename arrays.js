@@ -15,7 +15,7 @@ strings.unshift("x"); // O(n)
 // splice
 strings.splice(2, 0, "alien"); // O(n)
 
-console.log(strings);
+// console.log(strings);
 
 // C++
 // int a[20]
@@ -56,5 +56,17 @@ class MyArray {
     this.pop();
   }
 }
+
+const na = new MyArray();
+na.push("hi");
+na.push("you");
+na.push("!");
+na.delete(0);
+na.push("are");
+na.push("nice");
+na.delete(1);
+na.pop();
+console.log(na);
+console.log(na.get(na.length - 1));
 
 // Reverse a string means you have to convert it to an array
