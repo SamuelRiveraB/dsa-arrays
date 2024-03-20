@@ -43,6 +43,18 @@ class MyArray {
     this.length--;
     return lastItem;
   }
+
+  delete(index) {
+    const item = this.data[index];
+    this.shiftItems(index);
+  }
+
+  shiftItems(index) {
+    for (let i = index; i < this.length - 1; i++) {
+      this.data[i] = this.data[i + 1];
+    }
+    this.pop();
+  }
 }
 
 // Reverse a string means you have to convert it to an array
