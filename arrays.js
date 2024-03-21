@@ -70,3 +70,9 @@ console.log(na);
 console.log(na.get(na.length - 1));
 
 // Reverse a string means you have to convert it to an array
+
+function reverse(str) {
+  if (!str || str.length < 2 || typeof str !== "string") {
+    return "Hmm that's not good";
+  }
+}
