@@ -75,4 +75,14 @@ function reverse(str) {
   if (!str || str.length < 2 || typeof str !== "string") {
     return "Hmm that's not good";
   }
+  const backwards = [];
+  const lastIndex = str.length - 1;
+  for (let i = lastIndex; i >= 0; i--) {
+    backwards.push(str[i]);
+  }
+  console.log(backwards.join(""));
+
+  return backwards.join("");
 }
+
+reverse("Hi Im Samuel");
