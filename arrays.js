@@ -90,4 +90,6 @@ function reverse2(str) {
   return str.split("").reverse().join("");
 }
 
-reverse2("Hi Im Samuel");
+const reverse3 = (str) => [...str].reverse().join("");
+
+console.log(reverse3("Hi Im Samuel"));
