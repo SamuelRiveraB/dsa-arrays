@@ -85,4 +85,9 @@ function reverse(str) {
   return backwards.join("");
 }
 
-reverse("Hi Im Samuel");
+function reverse2(str) {
+  console.log(str.split("").reverse().join(""));
+  return str.split("").reverse().join("");
+}
+
+reverse2("Hi Im Samuel");
