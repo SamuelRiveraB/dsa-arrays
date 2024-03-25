@@ -96,6 +96,16 @@ console.log(reverse3("Hi Im Samuel"));
 
 // Merge sorted arrays
 
-function mergeSortedArrays(arr1, arr2) {}
+function mergeSortedArrays(arr1, arr2) {
+  const mergedArray = [];
+
+  // Check input
+  if (arr1.length === 0) {
+    return arr2;
+  }
+  if (arr2.length === 0) {
+    return arr1;
+  }
+}
 
 mergeSortedArrays([0, 3, 4, 31], [4, 6, 30]);
