@@ -112,7 +112,7 @@ function mergeSortedArrays(arr1, arr2) {
   }
 
   while (arr1item || arr2item) {
-    if (arr1item < arr2item) {
+    if (!arr2item || arr1item < arr2item) {
       mergedArray.push(arr1item);
       arr1item = arr1[i];
       i++;
@@ -122,6 +122,8 @@ function mergeSortedArrays(arr1, arr2) {
       j++;
     }
   }
+
+  console.log(mergedArray);
 }
 
 mergeSortedArrays([0, 3, 4, 31], [4, 6, 30]);
