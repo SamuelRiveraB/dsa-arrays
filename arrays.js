@@ -93,3 +93,9 @@ function reverse2(str) {
 const reverse3 = (str) => [...str].reverse().join("");
 
 console.log(reverse3("Hi Im Samuel"));
+
+// Merge sorted arrays
+
+function mergeSortedArrays(arr1, arr2) {}
+
+mergeSortedArrays([0, 3, 4, 31], [4, 6, 30]);
